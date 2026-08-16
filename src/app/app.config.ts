@@ -1,7 +1,7 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
-import { routes } from './app.routes';
+import { routes } from './app.routing';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -9,3 +9,4 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes)
   ]
 };
+

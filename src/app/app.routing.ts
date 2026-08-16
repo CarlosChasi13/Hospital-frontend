@@ -1,5 +1,6 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { Nabvar } from './modules/global/components/nabvar/nabvar';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     {
@@ -8,3 +9,11 @@ export const routes: Routes = [
         loadChildren: ()=> import('./rutas.module').then(m => m.RutasModule)
     }
 ];
+
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+
+export class AppRoutingModule {}
