@@ -5,6 +5,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { Index } from './components/index';
 import { Nabvar } from './components/nabvar/nabvar';
+import { RouterModule } from '@angular/router';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,15 @@ import { Nabvar } from './components/nabvar/nabvar';
     CommonModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
-  ],
+    MatIconModule,
+    RouterModule,
+    MatCardModule
+],
   exports: [
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ]
 })
 export class GlobalModule { }
